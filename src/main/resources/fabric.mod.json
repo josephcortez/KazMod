@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "kazmod",
+  "version": "${version}",
+  "name": "KazMod",
+  "description": "QoL client-side modifications to Minecraft",
+  "authors": [
+    "Kazzius"
+  ],
+  "contact": {
+    "repo": "https://github.com/corte/KazMod"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/kazmod/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "de.kazzius.kazmod.client.KazModClient"
+    ],
+    "main": [
+      "de.kazzius.kazmod.KazMod"
+    ]
+  },
+  "mixins": [
+    "kazmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
